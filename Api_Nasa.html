@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!-- Link Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Link Iconos -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Link Estilos -->
+    <link rel="stylesheet" href="./style/styles.css">
+
+    <title>API Nasa</title>
+</head>
+<body>
+
+    <main>
+        <section>
+            <div id="api" class="api_nasa_contenido">
+                <div class="contenedor_api_nasa">
+                    <div class="container">
+                        <h2>API Nasa</h2>
+                        <form class="formulario_api">
+                            <input type="date" id="day">
+                            <button>
+                                <i class='bx bx-search-alt-2' id="send"></i>
+                            </button>
+                        </form>
+
+                        <div id="nasa"></div>
+
+                        <div class="autor">
+                            <a href="https://www.linkedin.com/in/carolina-uribe-botero-7b0839195/" target="_blank"><p class="autor">Copyright &copy; 2022 by Carolina Uribe Botero</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>             
+
+            <div class="video_api" id="video">
+                <video autoplay loop title="video tomado de https://pixabay.com/es/">
+                    <source  src="/video/Tierra - 28531.mp4" type="video/mp4">
+                    Your browser does not support the video element.
+                </video>
+            </div>
+
+
+        </section>
+    </main>
+
+
+    <!-- Link JavaScript -->
+    <script src="./js/app.js" ></script>
+    
+</body>
+</html>
