@@ -5,6 +5,9 @@ const nasa = document.querySelector('#nasa');
 //Darle funcion al boton
 send.addEventListener('click', queryNasa);
 
+//Alert para iniciar el llamado de la api
+alert('Selecciona una fecha')
+
 // Funcion llamar la api
 function queryNasa(e){
     e.preventDefault();

@@ -16,7 +16,7 @@ a{
 body{
     font-family: 'Poppins', sans-serif;
     background-color: #011532;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 /* Estilos para el Scroll */
@@ -161,7 +161,7 @@ body::-webkit-scrollbar-thumb:hover {
     font-size: 0.8rem;
     font-weight: 300;
     text-align: center;
-
+    padding-top: 1rem;
 }
 
 
