@@ -56,6 +56,7 @@ function showIntroDOM(data){
 
     if (code == 400){
         alert('La fecha debe estar entre el 16 de junio de 1995 y el 21 de diciembre de 2022');
+        document.getElementById('day').focus();
     }
 
 };
@@ -64,3 +65,4 @@ function showIntroDOM(data){
 function clearHTML(){
     nasa.innerHTML = '';
 }
+

@@ -107,7 +107,7 @@ input[type="date"]:focus{
 
 .form-control:focus{
     box-shadow: none;
-    border: 1px solid #429cd839;
+    border: 1px solid #429CD8;
 }
 
 .formulario_api input:hover{
