@@ -30,12 +30,15 @@
                     <div class="container">
                         <h2>API Nasa</h2>
 
-                        <form class="formulario_api">
-                            <input type="date" id="day" >
-                            <button>
-                                <i class='bx bx-search-alt-2' id="send"></i>
-                            </button>
-                        </form>
+                        <div class="form-group formulario_api">
+                            <div class="col-md-6">
+                                <label class="control-label"></label>
+                                <input class="col-md-6 form-control" type="date" id="day" value="aa-dd-mm"></input>
+                                <button>
+                                    <i class='bx bx-search-alt-2' id="send"></i>
+                                </button>
+                            </div>
+                        </div>
 
                         <div id="nasa"></div>
 
