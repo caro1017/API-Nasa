@@ -30,7 +30,7 @@ function queryNasa(e){
 function showIntroDOM(data){
     clearHTML();
     //desestructurar informacion de la api
-    const {copyright,date,url,title,explanation} = data;
+    const {copyright,date,url,title,explanation,code} = data;
     /* console.log(data); */
     // Creacion de section para html
     const day = document.querySelector('#day').value;
@@ -53,6 +53,10 @@ function showIntroDOM(data){
     nasa.appendChild(dia);
     nasa.appendChild(imagen);
     nasa.appendChild(explicacion);
+
+    if (code == 400){
+        alert('La fecha debe estar entre el 16 de junio de 1995 y el 21 de diciembre de 2022');
+    }
 
 };
 
