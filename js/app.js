@@ -51,8 +51,12 @@ function showIntroDOM(data){
     nasa.appendChild(imagen);
     nasa.appendChild(explicacion);
 
-    if (code == 400 || code == 404){
-        alert(`La fecha debe estar entre el 16 de junio de 1995 - hoy`);        
+    if (code == 400){
+        alert('La fecha debe estar entre el 16 de junio de 1995 - hoy');        
+        clearHTML();
+        document.getElementById('day').focus();
+    } else if(code == 404){
+        alert(`No hay datos disponibles para la fecha: ${day}`);        
         clearHTML();
         document.getElementById('day').focus();
     }
