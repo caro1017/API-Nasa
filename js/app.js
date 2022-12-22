@@ -5,9 +5,6 @@ const nasa = document.querySelector('#nasa');
 //Darle funcion al boton
 send.addEventListener('click', queryNasa);
 
-//Alert para iniciar el llamado de la api
-/* alert('Selecciona una fecha') */
-
 // Funcion llamar la api
 function queryNasa(e){
     e.preventDefault();
@@ -54,8 +51,9 @@ function showIntroDOM(data){
     nasa.appendChild(imagen);
     nasa.appendChild(explicacion);
 
-    if (code == 400){
-        alert('La fecha debe estar entre el 16 de junio de 1995 y el 21 de diciembre de 2022');
+    if (code == 400 || code == 404){
+        alert(`La fecha debe estar entre el 16 de junio de 1995 - hoy`);        
+        clearHTML();
         document.getElementById('day').focus();
     }
 
